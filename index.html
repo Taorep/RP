@@ -5,34 +5,18 @@
 
 <head>
   <title>Taorep</title>
-
-  <script
-  src="https://code.jquery.com/jquery-3.3.1.min.js"
-  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
-<!-- FontAwesome -->
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-<!-- Custom CSS -->
-<link href="https://fonts.googleapis.com/css?family=Permanent+Marker" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="styles.css">
+  <style>
+    body {
+      margin:0;
+    }
+    canvas {
+    }
+  </style>
 </head>
 
 <body id="override">
-<div class=".container-fluid wrapper">
-  <div class="div-navbar">
-    <div class="logo">
-      <img id="logo" src="logo3.png" />
-    </div>
-    <div class="div-nav-ul">
-        <i id="arrow" class="fas fa-angle-down"></i>
-      <ul id="nav-ul">
-        <li class="about nav-li"><a class="nav-li-a" href="#">ABOUT</a></li>
-        <li class="work nav-li"><a class="nav-li-a" href="#">WORK</a></li>
-        <li class="nav-li contact"><a id="contact-button" class="nav-li-a" href="#">CONTACT</a></li>
-      </ul>
-    </div>
-  </div>
-</div>
-<script src="main.js"></script>
+<canvas></canvas>
+<script src="canvas.js"></script>
+<!-- <script src="main.js"></script> -->
 </body>
 </html>
