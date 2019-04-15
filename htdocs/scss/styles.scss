@@ -1,0 +1,197 @@
+
+html{
+	height:100%;
+  }
+  
+a {
+  text-decoration: none;
+}
+
+html,
+body {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  }
+
+html #override,
+body #override {
+  transition: .5s;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #cccccc;
+}
+
+a:hover {
+  border-bottom: 5px solid;
+  transition: ease;
+  cursor: pointer;
+}
+
+.wrapper {
+  margin-bottom: 0;
+}
+
+.wrapper .div-navbar {
+  text-align: center;
+}
+
+.logo {
+  /* display: inline-block; */
+  margin-top:.5rem;
+}
+
+#logo {
+  width: 20%;
+}
+
+  .link {
+    color: #ccc;
+    display: block;
+    font-size: 4.5rem;
+    &:hover {
+      border: none;
+    }
+  }
+
+
+#nav-ul {
+  display: none;
+  padding: 0;
+  color: black;
+  margin: auto;
+  position: relative;
+  bottom: 2rem;
+}
+
+.contact {
+  border: 2px solid;
+}
+
+.nav-li {
+  list-style: none;
+  padding: 1rem;
+  margin-bottom:.5rem;
+}
+
+.nav-li .nav-li-a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-li .nav-li-a:hover {
+  border-bottom: 2px solid;
+  transition: ease;
+}
+
+.contact:hover {
+  background-color:#ccc;
+}
+
+.contact:hover > #contact-button {
+  color: #000;
+  border:none;
+}
+
+.fas{
+  top: 0;
+  font-size:3rem;
+}
+
+.div-nav-ul {
+  margin: auto;
+  width: 7rem;
+}
+
+#arrow{
+  height:0;
+  transition:.7s;
+  position: relative;
+  &:before{
+    height:30px;
+  }
+}
+
+.arrowOne{
+  transform: rotatex(180deg);
+}
+
+.arrowTwo {
+    transform: rotatex(180deg);
+    top:15rem;
+}
+
+.about-info,
+.work-info, 
+.contact-info {
+  display: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 1rem;
+  font-size: 3.5rem;
+  color: #717171;
+}
+
+.contact-info {
+  text-align: right;
+  color: #ccc;
+}
+
+#about-button,
+#work-button, 
+#contact-button {
+  transition: .5s;
+}
+
+@media screen and (min-width: 300px){
+  #logo {
+    width: 40%;
+  }
+  .arrowTwo {
+    top: 14rem;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  #logo {
+    width: 30%;
+  }
+}
+
+@media screen and (min-width: 1024px){
+  #logo {
+    width: 20%;
+  }
+  .div-nav-ul {
+    margin: 0;
+    width: auto;
+  }  
+  .contact {
+    border: none;
+  }
+  .nav-li {
+    margin-bottom: 0;
+  }
+  #nav-ul {
+    display: flex !important;
+    position: absolute;
+    top: 0;
+  }
+  #arrow {
+    display: none;
+  }
+
+  .contact:hover {
+    background-color: transparent; 
+  }
+
+  .about-info, 
+  .work-info, 
+  .contact-info {
+    padding: 3rem;
+  }
+
+}
