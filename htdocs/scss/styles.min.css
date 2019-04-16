@@ -6,7 +6,7 @@ html, body { font-size: 16px; margin: 0; padding: 0; }
 
 html #override, body #override { -webkit-transition: .5s; transition: .5s; background-size: cover; background-repeat: no-repeat; background-color: #cccccc; }
 
-a:hover { border-bottom: 5px solid; -webkit-transition: ease; transition: ease; cursor: pointer; }
+a:hover { border-bottom: 5px solid; cursor: pointer; }
 
 .wrapper { margin-bottom: 0; }
 
@@ -18,7 +18,7 @@ a:hover { border-bottom: 5px solid; -webkit-transition: ease; transition: ease; 
 
 .link { color: #ccc; display: block; font-size: 4.5rem; }
 
-.link:hover { border: none; }
+.link:hover { color: #2c2c2c; border: none; }
 
 #nav-ul { display: none; padding: 0; color: black; margin: auto; position: relative; bottom: 2rem; }
 
@@ -30,9 +30,9 @@ a:hover { border-bottom: 5px solid; -webkit-transition: ease; transition: ease; 
 
 .nav-li .nav-li-a:hover { border-bottom: 2px solid; -webkit-transition: ease; transition: ease; }
 
-.contact:hover { background-color: #ccc; }
+.contact { background-color: transparent; }
 
-.contact:hover > #contact-button { color: #000; border: none; }
+.contact:hover > #contact-button { color: #000; }
 
 .fas { top: 0; font-size: 3rem; }
 
@@ -50,7 +50,7 @@ a:hover { border-bottom: 5px solid; -webkit-transition: ease; transition: ease; 
 
 .contact-info { text-align: right; color: #ccc; }
 
-#about-button, #work-button, #contact-button { -webkit-transition: .5s; transition: .5s; }
+#about-button, #work-button, #contact-button { -webkit-transition: .2s; transition: .2s; }
 
 @media screen and (min-width: 300px) { #logo { width: 40%; }
   .arrowTwo { top: 14rem; } }
@@ -64,5 +64,6 @@ a:hover { border-bottom: 5px solid; -webkit-transition: ease; transition: ease; 
   #nav-ul { display: -webkit-box !important; display: -ms-flexbox !important; display: flex !important; position: absolute; top: 0; }
   #arrow { display: none; }
   .contact:hover { background-color: transparent; }
-  .about-info, .work-info, .contact-info { padding: 3rem; } }
+  .about-info, .work-info, .contact-info { padding: 3rem; }
+  .contact-info { display: block; float: right; } }
 /*# sourceMappingURL=styles.min.css.map */

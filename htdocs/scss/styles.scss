@@ -1,4 +1,4 @@
-
+$dark: #2c2c2c;
 html{
 	height:100%;
   }
@@ -24,7 +24,6 @@ body #override {
 
 a:hover {
   border-bottom: 5px solid;
-  transition: ease;
   cursor: pointer;
 }
 
@@ -50,6 +49,7 @@ a:hover {
     display: block;
     font-size: 4.5rem;
     &:hover {
+      color: $dark;
       border: none;
     }
   }
@@ -86,13 +86,12 @@ a:hover {
   transition: ease;
 }
 
-.contact:hover {
-  background-color:#ccc;
+.contact {
+  background-color:transparent;
 }
 
 .contact:hover > #contact-button {
   color: #000;
-  border:none;
 }
 
 .fas{
@@ -143,7 +142,7 @@ a:hover {
 #about-button,
 #work-button, 
 #contact-button {
-  transition: .5s;
+  transition: .2s;
 }
 
 @media screen and (min-width: 300px){
@@ -158,6 +157,7 @@ a:hover {
 @media screen and (min-width: 500px) {
   #logo {
     width: 30%;
+    
   }
 }
 
@@ -194,4 +194,8 @@ a:hover {
     padding: 3rem;
   }
 
+  .contact-info {
+    display: block;
+    float:right;
+  }
 }
